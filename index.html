@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Learn Animal!</title>
+
+    <style> 
+
+        img {
+            height: 120px;
+            width: 120px;
+        }
+        /* #bird{
+            background-color: yellow;
+        }
+
+        #cat {
+            background-color: aquamarine;
+        } */
+    
+        .container {
+            padding: 10px;
+        }
+        .row {
+            padding: 10px 10px 10px 10px;
+        }
+
+        .col-lg-4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+        }
+        
+        #atas{
+            text-align: center;
+            margin-bottom: 30px;
+            
+        }
+
+        #atas h2{
+            padding: 20px;
+        }
+            </style>
+  </head>
+  <body>
+        <div class="container">
+            <div class="col-lg"  id="atas">
+                <h2>choose you language!</h2>
+                    <button onclick="selectLang('en')" class="btn btn-outline-primary center-block"> English </button>
+                    <button onclick="selectLang('id')" class="btn btn-outline-primary center-block"> Indonesia </button>
+            </div>
+            
+
+            <div class="row">
+                <div class="col-lg-4" id="dog" onclick="spellAnimal('dog', 'id')">
+                    <img src="./assets//dog.png" alt="">
+                    <audio src="./assets/dog-id.mp3" id="dog-id"></audio>
+                    <audio src="./assets/dog-en.mp3" id="dog-en"></audio>
+                </div>
+                <div class="col-lg-4" id="cat" onclick="spellAnimal('cat', 'id')">
+                    <img src="./assets//cat .png" alt="">
+                    <audio src="./assets/cat-id.mp3" id="cat-id"></audio>
+                    <audio src="./assets/cat-en.mp3" id="cat-en"></audio>
+                </div>
+                <div class="col-lg-4" id="bird" onclick="spellAnimal('bird', 'id')">
+                    <img src="./assets//bird.png" alt="">
+                    <audio src="./assets/bird-id.mp3" id="bird-id"></audio>
+                    <audio src="./assets/bird-en.mp3" id="bird-en"></audio>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-lg-4" id="bear" onclick="spellAnimal('bear', 'id')">
+                        <img src="./assets//bear.png" alt="">
+                        <audio src="./assets/bear-id.mp3" id="bear-id"></audio>
+                        <audio src="./assets/bear-en.mp3" id="bear-en"></audio>
+                    </div>
+                    <div class="col-lg-4" id="buffalo" onclick="spellAnimal('buffalo', 'id')">
+                        <img src="./assets//buffalo.png" alt="">
+                        <audio src="./assets/buffalo-id.mp3" id="buffalo-id"></audio>
+                        <audio src="./assets/buffalo-en.mp3" id="buffalo-en"></audio>
+                    </div>
+                   <div class="col-lg-4" id="deer" onclick="spellAnimal('deer', 'id')">
+                        <img src="./assets//deer.png" alt="">
+                        <audio src="./assets/deer-id.mp3" id="deer-id"></audio>
+                        <audio src="./assets/deer-en.mp3" id="deer-en"></audio>
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4" id="elephant" onclick="spellAnimal('elephant', 'id')">
+                    <img src="./assets//elephant.png" alt="">
+                    <audio src="./assets/elephant-id.mp3" id="elephant-id"></audio>
+                    <audio src="./assets/elephant-en.mp3" id="elephant-en"></audio>
+                </div>
+                <div class="col-lg-4" id="chicken" onclick="spellAnimal('chicken', 'id')">
+                    <img src="./assets//hen.png" alt="">
+                    <audio src="./assets/chicken-id.mp3" id="chicken-id"></audio>
+                    <audio src="./assets/chicken-en.mp3" id="chicken-en"></audio>
+                </div>
+                <div class="col-lg-4" id="shark" onclick="spellAnimal('shark', 'id')">
+                    <img src="./assets//shark.png" alt="">
+                    <audio src="./assets/shark-id.mp3" id="shark-id"></audio>
+                    <audio src="./assets/shark-en.mp3" id="shark-en"></audio>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
